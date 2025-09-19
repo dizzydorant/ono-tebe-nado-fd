@@ -13,8 +13,8 @@
     <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
-          <li class="header__links-list-item_no-bullit">
-            <a class="header__link_active" href="#">главная</a>
+          <li class="header__links-list-item header__links-list-item_no-bullit">
+            <a class="header__link header__link_active" href="#">главная</a>
           </li>
           <li class="header__links-list-item">
             <a class="header__link" href="#">посмотреть лоты</a>
@@ -28,22 +28,16 @@
       <a class="header__logo"
         ><img
           class="header__logo-image"
-          src="/images/logo-black.svg"
+          src="./images/logo-black.svg"
           alt="logo"
       /></a>
 
       <address class="address header__address">
-        <ul class="header__address-links-list">
-          <li class="header__address-links-list-item">
-            <a href="tel:+99995555555">+9 999 555 5555</a>
-          </li>
-          <li class="header__address-links-list-item">
-            <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          </li>
-          <li class="header__address-links-list-item">
-            <a>наб. Принсенграхт 263 - 265, Амстердам</a>
-          </li>
-        </ul>
+        <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
+
+        <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+
+        <a class="address__link">наб. Принсенграхт 263 - 265, Амстердам</a>
       </address>
     </header>
 
@@ -73,11 +67,11 @@
       </section>
 
       <section class="lots">
-        <h1 class="lots__heading">Лоты</h1>
+        <h2 class="lots__heading">Лоты</h2>
 
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
-            <a class="card-link"
+            <a href="#" class="card-link"
               ><article class="card card_type_film">
                 <div class="overlay"></div>
                 <h3 class="card__title">
@@ -94,7 +88,7 @@
           </li>
 
           <li class="lots__card-list-item">
-            <a class="card-link"
+            <a href="#" class="card-link"
               ><article class="card card_type_book">
                 <div class="overlay"></div>
                 <h3 class="card__title">
@@ -114,7 +108,7 @@
           </li>
 
           <li class="lots__card-list-item">
-            <a class="card-link"
+            <a href="#" class="card-link"
               ><article class="card card_type_picture">
                 <div class="overlay"></div>
                 <h3 class="card__title">
@@ -137,11 +131,15 @@
 
       <section class="about">
         <div class="about__logo">
-          <img class="about__logo-image" src="./images/logo-white.svg" alt="" />
+          <img
+            class="about__logo-image"
+            src="./images/logo-white.svg"
+            alt="white-logo"
+          />
         </div>
 
         <div class="about__column">
-          <h1 class="about__title">Об аукционе</h1>
+          <h2 class="about__title">Об аукционе</h2>
 
           <div class="about__text">
             <p>
@@ -168,17 +166,11 @@
 
     <footer class="footer">
       <address class="address footer__adress">
-        <ul class="footer__address-links-list">
-          <li class="footer__address-links-list-item">
-            <a href="tel:+99995555555">+9 999 555 5555</a>
-          </li>
-          <li class="footer__address-links-list-item">
-            <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          </li>
-          <li class="footer__address-links-list-item">
-            <a>наб. Принсенграхт 263 - 265, Амстердам</a>
-          </li>
-        </ul>
+        <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
+
+        <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+
+        <a class="address__link">наб. Принсенграхт 263 - 265, Амстердам</a>
       </address>
 
       <nav class="footer__menu">

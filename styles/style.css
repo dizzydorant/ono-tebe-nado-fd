@@ -36,6 +36,8 @@
 }
 
 .address {
+  display: flex;
+  flex-direction: column;
   max-width: 240px;
   font-size: 18px;
   font-style: normal;
@@ -46,10 +48,6 @@
 
 .header__address {
   justify-self: end;
-}
-
-.header__address-links-list {
-  list-style: none;
 }
 
 /* Стили для cover */
@@ -152,13 +150,14 @@
 .lots__card-list {
   display: flex;
   flex-direction: row;
-  gap: 25px;
-  padding: 30px 25px;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 30px 25px;
   list-style-type: none;
 }
 
 .lots__card-list-item {
-  min-width: 334px;
+  width: 334px;
   min-height: 596px;
 }
 
@@ -252,7 +251,7 @@
   display: flex;
   flex-direction: column;
   gap: 100px;
-  width: 690px;
+  max-width: 690px;
   padding: 138px 0px;
 }
 
@@ -277,16 +276,12 @@
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   gap: 33px;
-  margin: 45px auto;
-}
-
-.footer__address-links-list {
-  min-width: 264px;
-  list-style: none;
+  margin: 45px 0px 82px 0px;
 }
 
 .footer__menu-list {
   font-size: 18px;
+  text-underline-offset: 5px;
   list-style: none;
 }
 
@@ -295,7 +290,7 @@
 }
 
 .footer__menu-link_active {
-  text-transform: none;
+  text-decoration: none;
 }
 
 .footer__social-list {
